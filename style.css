@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  margin: 0;
+  height: 100vh;
+}
+.header {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  padding-left: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #00b102;
+}.header 
+
+        /* TITULO */
+.title {
+  font-size: 3rem;
+  font-weight: 900;
+}.title .sp {
+  font-weight: 300;
+  color: #004c01;
+}
+
+      /* MAIN */
+.main {
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-between;
+  column-gap: 1rem;
+  background-color: #131313;
+}
+.redes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #00b102;
+  flex-direction: column;
+  width: 20%;
+  height: 80vh;
+}.redes a {
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+}
+
+
+/* 6. Estilos de Redes Sociales */
+/* Necesitarás una librería de íconos como FontAwesome para los íconos (fab) */
+.redes a {
+    font-size: 3rem;
+    transition: transform 0.3s ease;
+    color: #black;
+}
+
+.redes a:hover {
+    color: var(--color-principal);
+    transform: translateY(-2px); /* Pequeño efecto de elevación */
+}
+
+/* LOGO */
+.card {
+  width: 80%;
+  height: 80vh;
+  overflow: hidden;
+}
+.logo {
+  width: 75%;
+  height: 200px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}.logo img {
+  width: 500px;
+  object-fit: cover;
+}
+.perfumes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%;
+  height: 100px;
+  margin: 10px auto;
+}
+.card .perfumes img{
+  width: 60px;
+}
+.card .letras {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  margin: 10px auto;
+}
+.card .letras h3 {
+  font-size: 2rem;
+  font-weight: 250;
+  color: gray;
+}
+.card .p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 190px;
+  margin: 10px auto;
+  color: #fff;
+  font-weight: 425;
+  
+}
+
+/* Variables para mantener la consistencia de color (Opcional pero recomendado) */
+:root {
+    --color-principal: #00b102; /* Verde Oscuro del Logo */
+    --color-secundario: #131313;
+    --color-fondo: #f5f5f5; /* Gris muy claro */
+    --color-texto-claro: #ffffff;
+    --color-texto-oscuro: #333333;
+}
+
+/* 1. Estilos del Footer General */
+.footer-porencima {
+    background-color: var(--color-secundario); /* Fondo negro elegante */
+    color: var(--color-fondo); /* Texto gris claro */
+    padding: 40px 20px 10px;
+}
+
+/* 2. Configuración del Contenedor Principal (GRID) */
+.footer-grid-container {
+    max-width: 1200px; /* Ancho máximo para grandes pantallas */
+    margin: 0 auto; /* Centrar */
+    display: grid;
+    /* Divide el footer en tres columnas de tamaño similar */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Separador sutil */
+}
+
+/* 3. Estilos de las Columnas */
+.footer-col h3 {
+    color: var(--color-principal); /* Títulos en el color de la marca (Verde) */
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-col p, .footer-col address {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+/* 4. Estilos de Navegación */
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col a {
+    color: var(--color-fondo);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.95em;
+}
+
+.footer-col a:hover {
+    color: var(--color-principal); /* Efecto hover del color de la marca */
+}
+
+/* 5. Estilos de Suscripción (Newsletter) */
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.newsletter-form input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid var(--color-principal);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-texto-claro);
+}
+
+.newsletter-form button {
+    background-color: var(--color-principal);
+    color: var(--color-texto-claro);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #387847; /* Un verde ligeramente más oscuro al hacer hover */
+}
+
+/* 6. Estilos de Redes Sociales */
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    
+}
+
+/* Necesitarás una librería de íconos como FontAwesome para los íconos (fab) */
+.social-links a {
+    font-size: 1.5em;
+    transition: transform 0.3s ease;
+    color: #007402;
+}
+
+.social-links a:hover {
+    color: var(--color-principal);
+    transform: translateY(-2px); /* Pequeño efecto de elevación */
+}
+
+/* 7. Estilos de la Barra Inferior */
+.footer-bottom {
+    max-width: 1200px;
+    margin: 10px auto 0;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1em;
+    color: black;
+    background-color: #00b102;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  width: 100%;
+  margin: 20px 0;
+  background-color: #00b102;
+}
